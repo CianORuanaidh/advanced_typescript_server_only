@@ -24,7 +24,7 @@ export class UserCredentialsDBAccess {
         })
     }
 
-    @delayResponse(5000)
+    // @delayResponse(5000)
     public async getUserCredential(username: string, password: string): Promise<UserCredentials | undefined> {
         // throw ""
         return new Promise((resolve, reject) => {
