@@ -1,0 +1,35 @@
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+    "username": "user1",
+    "password": "password1"
+}
+
+###
+GET http://localhost:8080/systemInfo
+
+###
+GET http://localhost:8080/users?id=33333
+Authorization: yv2v9qetqu
+
+###
+GET http://localhost:8080/users?name=Bill
+Authorization: yv2v9qetqu
+
+
+###
+DELETE http://localhost:8080/users?id=9drrrilzxzm
+Authorization: yv2v9qetqu
+
+###
+PUT http://localhost:8080/users
+Authorization: yv2v9qetqu
+Content-Type: application/json
+
+{
+    "age": 15,
+    "email": "another@email.com",
+    "name": "Mick",
+    "workingPosition": 3
+}
